@@ -36,6 +36,6 @@ tweets['normalized_tweet'] = tweets.text.apply(normalizer)
 tweets[['text','normalized_tweet']].head()
 
 tweets['grams'] = tweets.normalized_tweet.apply(ngrams)
-df.to_csv(tweets, sep='\t')
+pd.to_csv(tweets, sep='\t')
 
 
