@@ -36,5 +36,5 @@ tweets['normalized_tweet'] = tweets.text.apply(normalizer)
 tweets[['text','normalized_tweet']].head()
 
 tweets['grams'] = tweets.normalized_tweet.apply(ngrams)
-tweets['grams'].to_csv("output.csv")
+tweets['airline_sentiment', 'text, 'normalized_tweets', 'grams'].to_csv("output.csv")
 
