@@ -23,7 +23,7 @@ def ngrams(input_list):
     trigrams = [' '.join(t) for t in list(zip(input_list, input_list[1:], input_list[2:]))]
     return bigrams+trigrams
  
-tweet = pd.read_csv("Tweets.csv")
+tweets = pd.read_csv("Tweets.csv")
 print(list("tweet.column.values"))
 
 sentiment_counts = tweets.airline_sentiment.value_counts()
